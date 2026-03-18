@@ -1,13 +1,16 @@
 import React, { useRef } from 'react'
 import { useState } from 'react'
+import { useNavigate,useLocation } from 'react-router-dom'
 
 const NavBar = () => {
+    const navigate = useNavigate()
+    const location = useLocation()
 
     const navGreenRef = useRef(null)
     const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <div className='flex fixed top-0 w-full items-start justify-between z-4 '>
+    <div className='flex fixed top-0 w-full items-start justify-between z-10 '>
 
         <div className=' w-32 p-3'>
             <svg className=' w-full' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 44">
@@ -15,10 +18,12 @@ const NavBar = () => {
             </svg>
         </div>
 
-        <div
-            onMouseEnter={()=>{ navGreenRef.current.style.height = '100%'; setIsHovered(true) }}
-            onMouseLeave={()=>{ navGreenRef.current.style.height = '0%'; setIsHovered(false) }}
-            className='h-13 w-58 relative bg-black'>
+        {location.pathname !== "/menu" && (
+            <div
+                onClick={()=>navigate('/menu')}
+                onMouseEnter={()=>{ navGreenRef.current.style.height = '100%'; setIsHovered(true) }}
+                onMouseLeave={()=>{ navGreenRef.current.style.height = '0%'; setIsHovered(false) }}
+                className='h-13 w-58 relative bg-black'>
 
             <div ref={navGreenRef} className='transition-all absolute top-0 w-full h-0 bg-[#D3FD50]'></div>
             <div className='relative'></div>
@@ -28,6 +33,9 @@ const NavBar = () => {
                 <div className={`w-10 h-0.5 ml-7 transition-colors ${isHovered ? 'bg-black' : 'bg-white'}`}></div>
             </div>
         </div>
+        )}
+
+        
         
     </div>
  )
