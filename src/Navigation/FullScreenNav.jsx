@@ -47,28 +47,58 @@ useGSAP(() => {
         </div>
 
       <div className=''>
-        <div className='link border-y relative ' >
+       <div className='link border-y relative ' >
             <div>
-              <h1 className='font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>PROJETS</h1>
+                <h1 onClick={() => navigate('/')}
+                className='font-[font1] text-[7vw] text-center leading-[0.8] pt-5 cursor-pointer'>HOME</h1>
             </div>
 
-            <div className='movelink absolute flex text-black top-0 bg-[#D3FD50]'>
+            <div className='movelink overflow-hidden absolute flex text-black top-0 bg-[#D3FD50] pointer-events-none'>
                 <div className='moveX shrink-0 flex item-center'>
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
+                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>HOME</h2>
 
                     <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/PJC_SiteK72_Thumbnail_640x290.jpg" alt="" />
 
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
+                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>HOME</h2>
 
                     <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/Thumbnail.png" alt="" />
                 </div>
 
                 <div className='moveX shrink-0 flex item-center'>
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
+                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>HOME</h2>
 
                     <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/PJC_SiteK72_Thumbnail_640x290.jpg" alt="" />
 
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
+                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>HOME</h2>
+
+                    <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/Thumbnail.png" alt="" />
+                </div>
+            </div>
+
+        </div>
+        <div className='link border-y relative ' >
+            <div>
+                <h1 onClick={() => navigate('/projects')}
+                className='font-[font1] text-[7vw] text-center leading-[0.8] pt-5 cursor-pointer'>PROJECTS</h1>
+            </div>
+
+            <div className='movelink overflow-hidden absolute flex text-black top-0 bg-[#D3FD50] pointer-events-none'>
+                <div className='moveX shrink-0 flex item-center'>
+                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>PROJECTS</h2>
+
+                    <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/PJC_SiteK72_Thumbnail_640x290.jpg" alt="" />
+
+                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>PROJECTS</h2>
+
+                    <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/Thumbnail.png" alt="" />
+                </div>
+
+                <div className='moveX shrink-0 flex item-center'>
+                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>PROJECTS</h2>
+
+                    <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/PJC_SiteK72_Thumbnail_640x290.jpg" alt="" />
+
+                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>PROJECTS</h2>
 
                     <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/Thumbnail.png" alt="" />
                 </div>
@@ -78,55 +108,27 @@ useGSAP(() => {
 
         <div className='link border-y relative ' >
             <div>
-              <h1 className='font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>PROJETS</h1>
+              <h1 onClick={() => navigate('/agence')}
+             className='font-[font1] text-[7vw] text-center leading-[0.8] pt-5 cursor-pointer'>SKILLS & Achivements</h1>
             </div>
 
-            <div className='movelink absolute flex text-black top-0 bg-[#D3FD50]'>
+            <div className='movelink overflow-hidden absolute flex text-black top-0 bg-[#D3FD50] pointer-events-none'>
                 <div className='moveX shrink-0 flex item-center'>
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
+                    <h2 className='whitespace-nowrap font-[font1] text-[7vw] text-center leading-[0.8] pt-5'>SKILLS</h2>
 
                     <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/PJC_SiteK72_Thumbnail_640x290.jpg" alt="" />
 
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
+                    <h2 className='whitespace-nowrap font-[font1] text-[7vw] text-center leading-[0.8] pt-5'>SKILLS</h2>
 
                     <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/Thumbnail.png" alt="" />
                 </div>
 
                 <div className='moveX shrink-0 flex item-center'>
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
+                    <h2 className='whitespace-nowrap font-[font1] text-[7vw] text-center leading-[0.8] pt-5'>SKILLS</h2>
 
                     <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/PJC_SiteK72_Thumbnail_640x290.jpg" alt="" />
 
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
-
-                    <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/Thumbnail.png" alt="" />
-                </div>
-            </div>
-
-        </div>
-
-        <div className='link border-y relative ' >
-            <div>
-              <h1 className='font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>PROJETS</h1>
-            </div>
-
-            <div className='movelink absolute flex text-black top-0 bg-[#D3FD50]'>
-                <div className='moveX shrink-0 flex item-center'>
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
-
-                    <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/PJC_SiteK72_Thumbnail_640x290.jpg" alt="" />
-
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
-
-                    <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/Thumbnail.png" alt="" />
-                </div>
-
-                <div className='moveX shrink-0 flex item-center'>
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
-
-                    <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/PJC_SiteK72_Thumbnail_640x290.jpg" alt="" />
-
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
+                    <h2 className='whitespace-nowrap font-[font1] text-[7vw] text-center leading-[0.8] pt-5'>SKILLS</h2>
 
                     <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/Thumbnail.png" alt="" />
                 </div>
@@ -136,26 +138,57 @@ useGSAP(() => {
 
         <div className='link border-y relative ' >
             <div>
-                <h1 className='font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>PROJETS</h1>
+              <h1 onClick={() => navigate('/resume')}
+             className='font-[font1] text-[7vw] text-center leading-[0.8] pt-5 cursor-pointer'>RESUME</h1>
             </div>
 
-            <div className='movelink absolute flex text-black top-0 bg-[#D3FD50]'>
+            <div className='movelink overflow-hidden absolute flex text-black top-0 bg-[#D3FD50] pointer-events-none'>
                 <div className='moveX shrink-0 flex item-center'>
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
+                    <h2 className='whitespace-nowrap font-[font1] text-[7vw] text-center leading-[0.8] pt-5'>RESUME</h2>
 
                     <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/PJC_SiteK72_Thumbnail_640x290.jpg" alt="" />
 
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
+                    <h2 className='whitespace-nowrap font-[font1] text-[7vw] text-center leading-[0.8] pt-5'>RESUME</h2>
 
                     <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/Thumbnail.png" alt="" />
                 </div>
 
                 <div className='moveX shrink-0 flex item-center'>
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
+                    <h2 className='whitespace-nowrap font-[font1] text-[7vw] text-center leading-[0.8] pt-5'>RESUME</h2>
 
                     <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/PJC_SiteK72_Thumbnail_640x290.jpg" alt="" />
 
-                    <h2 className='whitespace-nowrap font-[font1] text-[8vw] text-center leading-[0.8] pt-5'>POUR TOUT VOIR</h2>
+                    <h2 className='whitespace-nowrap font-[font1] text-[7vw] text-center leading-[0.8] pt-5'>RESUME</h2>
+
+                    <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/Thumbnail.png" alt="" />
+                </div>
+            </div>
+
+        </div>
+
+        <div className='link border-y relative ' >
+            <div>
+                <h1 onClick={() => navigate('/contact')}
+                className='font-[font1] text-[7vw] text-center leading-[0.8] pt-5 cursor-pointer'>GET IN TOUCH</h1>
+            </div>
+
+            <div className='movelink overflow-hidden absolute flex text-black top-0 bg-[#D3FD50] pointer-events-none'>
+                <div className='moveX shrink-0 flex item-center'>
+                    <h2 className='whitespace-nowrap font-[font1] text-[7vw] text-center leading-[0.8] pt-5'>GET IN TOUCH</h2>
+
+                    <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/PJC_SiteK72_Thumbnail_640x290.jpg" alt="" />
+
+                    <h2 className='whitespace-nowrap font-[font1] text-[7vw] text-center leading-[0.8] pt-5'>GET IN TOUCH</h2>
+
+                    <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/Thumbnail.png" alt="" />
+                </div>
+
+                <div className='moveX shrink-0 flex item-center'>
+                    <h2 className='whitespace-nowrap font-[font1] text-[7vw] text-center leading-[0.8] pt-5'>GET IN TOUCH</h2>
+
+                    <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/PJC_SiteK72_Thumbnail_640x290.jpg" alt="" />
+
+                    <h2 className='whitespace-nowrap font-[font1] text-[7vw] text-center leading-[0.8] pt-5'>GET IN TOUCH</h2>
 
                     <img className='mt-2 h-26 w-72 rounded-full object-cover' src="/Nav/Thumbnail.png" alt="" />
                 </div>

@@ -1,10 +1,11 @@
 import React, { useRef } from 'react'
-import ProjectCard from '../components/Projects/ProjectCard'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Link } from 'react-router-dom';
 import{ useState } from 'react'
+
+import BlackSection from '../components/Projects/Contract';
+import ProjectCard from '../components/Projects/ProjectCard'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,10 +16,9 @@ const Projects = () => {
   const [showBar, setShowBar] = useState(false);
 
   const socialLinks = [
-    { label: 'FB', to: '' },
-    { label: 'IG', to: '' },
-    { label: 'IN', to: '' },
-    { label: 'BE', to: '' }
+    { label: 'FB', to: 'https://www.facebook.com/ami.anikate.3' },
+    { label: 'IG', to: 'https://www.instagram.com/its_ani_1922/' },
+    { label: 'LI', to: 'www.linkedin.com/in/anikatekanoo' },
   ];
 
   // 🔥 GSAP animation (unchanged)
@@ -149,42 +149,11 @@ const Projects = () => {
       </div>
 
       {/* Black Section */}
-      <div
-        className='mt-1 -mx-4 bg-black/90 py-6 md:py-8'
-        onMouseEnter={handleHover}
-        onMouseLeave={handleLeave}
-      >
-        <div className='mx-auto flex w-full max-w-475 flex-col gap-5 px-3 md:flex-row md:items-center md:justify-between md:px-5'>
-          
-          {/* Social */}
-          <div className='flex flex-wrap gap-2 md:gap-3'>
-            {socialLinks.map((item) => (
-              <Link
-                key={item.label}
-                to={item.to}
-                className='rounded-full border border-white px-5 py-1.5 text-4xl font-black uppercase text-white hover:bg-white hover:text-black md:text-6xl'
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
-
-          {/* Contact */}
-          <Link
-            to='/contact'
-            className='inline-flex items-center gap-3 rounded-full border border-white px-5 py-1.5 text-4xl font-black uppercase text-white hover:bg-white hover:text-black md:text-6xl'
-          >
-            <span>Contact</span>
-          </Link>
-
-        </div>
-
-        {/* Tagline */}
-        <div className='text-center mt-40 font-[font2] text-l md:text-2xl text-white'>
-          <h1 className="tagline"></h1>
-        </div>
-
-      </div>
+      <BlackSection 
+        socialLinks={socialLinks} 
+        handleHover={handleHover} 
+        handleLeave={handleLeave} 
+      />
     </div>
     </>
   )
